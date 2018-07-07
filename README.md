@@ -4,7 +4,7 @@ This is a test task. Run the jar file from the command line.
 
 Input:
 
-java -jar <application paht>.jar <origin file path> <diff file path>
+java -jar ApplicationPaht.jar OriginFilePath DiffFilePath
 
 Sample input and output:
 
