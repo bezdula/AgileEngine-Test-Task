@@ -1,0 +1,43 @@
+Alghorytm:
+1. Detemine XML path for the original file button;
+2. Determine original button XML type - <a> in our case;
+3. Remove 2 levels from the end of the original path;
+4. Find all <a> elements for the above path;
+5. Analyze selected element for the keywords: contains "ok", "good", "excellent", "great", "super", "perfect"; does not contain "bad", "not", "worse", "dont", "don't".
+6. If zero or more that one elements are selected, print error message.
+ 
+
+Sample output for sample-1-evil-gemini.html:
+
+The path to start search. 2 levels has been removed from the end: html/body[1]/div[1]/div[1]/div[3]/div[1]/div
+Origin node type is <a>
+Analyzing text containing in selected <a> elements in diff file
+Path to element in diff-case HTML:
+html/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/a
+
+
+Sample output for sample-2-container-and-clone.html:
+
+The path to start search. 2 levels has been removed from the end: html/body[1]/div[1]/div[1]/div[3]/div[1]/div
+Origin node type is <a>
+Analyzing text containing in selected <a> elements in diff file
+Path to element in diff-case HTML:
+html/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/a
+
+
+Sample output for sample-3-the-escape.html:
+
+The path to start search. 2 levels has been removed from the end: html/body[1]/div[1]/div[1]/div[3]/div[1]/div
+Origin node type is <a>
+Analyzing text containing in selected <a> elements in diff file
+Path to element in diff-case HTML:
+html/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[3]/a
+
+
+Sample output for sample-4-the-mash.html:
+
+The path to start search. 2 levels has been removed from the end: html/body[1]/div[1]/div[1]/div[3]/div[1]/div
+Origin node type is <a>
+Analyzing text containing in selected <a> elements in diff file
+Path to element in diff-case HTML:
+html/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[3]/a
